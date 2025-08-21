@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,200,0,0"
+    />
+    <link rel="stylesheet" href="/global/style.css" />
+  </head>
+  <body class="bg-black text-white min-h-screen">
+    <div class="max-w-7xl mx-auto flex relative box-border p-0 m-0">
+      <!-- Left Sidebar -->
+      <div
+        class="hidden md:flex  lg:w-72 xl:w-60 fixed md:sticky md:top-0 h-screen flex-col border-r border-color"
+      >
+        <div class="p-3">
+          <!-- Logo -->
+          <div class="w-8 h-8 mb-4">
+            <svg viewBox="0 0 24 24" class="w-full h-full fill-white">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </svg>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="space-y-2 md:space-y-3 mb-1">
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl">home</span>
+              <span class="hidden lg:block text-xl">Home</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl">search</span>
+              <span class="hidden lg:block text-xl">Explore</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl"
+                >notifications</span
+              >
+              <span class="hidden lg:block text-xl">Notifications</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl">mail</span>
+              <span class="hidden lg:block text-xl">Messages</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl"
+                >offline_bolt</span
+              >
+              <span class="hidden lg:block text-xl">Grok</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl">group</span>
+              <span class="hidden lg:block text-xl">Communities</span>
+            </a>
+            <a
+              href="#"
+              class="hidden lg:flex items-center md:justify-normal justify-center space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl">verified</span>
+              <span class="text-xl">Premium</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl">person</span>
+              <span class="hidden lg:block text-xl">Profile</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center md:justify-normal space-x-4 p-2 rounded-full hover:bg-gray-900 transition-colors"
+            >
+              <span class="material-symbols-rounded text-2xl">more_horiz</span>
+              <span class="hidden lg:block text-xl">More</span>
+            </a>
+            <!-- Post Button -->
+            <button
+              class="flex items-center justify-center md:justify-normal space-x-4 p-3 bg-blue-400 rounded-full hover:bg-blue-600 transition-colors"
+            >
+              <span class="hidden lg:block w-40">Post</span>
+              <span class="material-symbols-rounded lg:hidden">add</span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Profile -->
+        <div class="mt-auto p-2">
+          <div
+            class="flex items-center justify-center space-x-3 p-2 rounded-full hover:bg-gray-900 cursor-pointer"
+          >
+            <img
+              src="https://pbs.twimg.com/profile_images/1626841805538070534/vM_I5Xha_bigger.png"
+              alt="Profile"
+              class="w-10 h-10 rounded-full"
+            />
+            <div class="hidden lg:block flex-1">
+              <div class="font-bold">MD</div>
+              <div class="text-gray-500 text-sm">@MD1234</div>
+            </div>
+            <span class="material-symbols-rounded text-gray-500 hidden lg:block"
+              >more_horiz</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex-1 md:ml-0 lg:ml-0 max-w-2xl border-r border-color">
+        <!-- Header -->
+        <div
+          class="sticky top-0 bg-black bg-opacity-80 backdrop-blur border-b border-color z-50"
+        >
+          <div class="flex">
+            <div class="flex-1 flex justify-center">
+              <button
+                class="py-4 px-6 text-white border-b-2 border-blue-500 font-bold"
+              >
+                For you
+              </button>
+            </div>
+            <div class="flex-1 flex justify-center">
+              <button
+                class="py-4 px-6 text-gray-500 hover:bg-gray-900 transition-colors font-bold"
+              >
+                Following
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tweet Composer -->
+        <div class="border-b border-color p-4">
+          <div class="flex space-x-4">
+            <img
+              src="https://pbs.twimg.com/profile_images/1626841805538070534/vM_I5Xha_bigger.png"
+              alt="Your avatar"
+              class="w-12 h-12 rounded-full flex-shrink-0"
+            />
+            <div class="flex-1">
+              <textarea
+                placeholder="What's happening?"
+                class="w-full bg-transparent text-xl placeholder-gray-500 border-none outline-none resize-none"
+                rows="3"
+              ></textarea>
+              <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-4">
+                  <button class="hover-tooltip relative">
+                    <span
+                      class="material-symbols-rounded text-blue-500 hover:bg-blue-500 hover:bg-opacity-10 p-2 rounded-full transition-colors"
+                      >image</span
+                    >
+                    <span
+                      class="tooltip absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2"
+                      >Media</span
+                    >
+                  </button>
+                  <button class="hover-tooltip relative">
+                    <span
+                      class="material-symbols-rounded text-blue-500 hover:bg-blue-500 hover:bg-opacity-10 p-2 rounded-full transition-colors"
+                      >gif_box</span
+                    >
+                    <span
+                      class="tooltip absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2"
+                      >GIF</span
+                    >
+                  </button>
+                  <button class="hover-tooltip relative">
+                    <span
+                      class="material-symbols-rounded text-blue-500 hover:bg-blue-500 hover:bg-opacity-10 p-2 rounded-full transition-colors"
+                      >ballot</span
+                    >
+                    <span
+                      class="tooltip absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2"
+                      >Poll</span
+                    >
+                  </button>
+                  <button class="hover-tooltip relative">
+                    <span
+                      class="material-symbols-rounded text-blue-500 hover:bg-blue-500 hover:bg-opacity-10 p-2 rounded-full transition-colors"
+                      >sentiment_satisfied</span
+                    >
+                    <span
+                      class="tooltip absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2"
+                      >Emoji</span
+                    >
+                  </button>
+                </div>
+                <button
+                  class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled
+                >
+                  Post
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posts Feed -->
+        <div class="divide-y divide-gray-800">
+          <!-- Post 1 -->
+          <article
+            class="p-4 hover:bg-gray-950 transition-colors cursor-pointer"
+          >
+            <div class="flex space-x-3">
+              <img
+                src="https://pbs.twimg.com/profile_images/1626841805538070534/vM_I5Xha_bigger.png"
+                alt="SalmanKhan"
+                class="w-12 h-12 rounded-full flex-shrink-0"
+              />
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center space-x-2 mb-1">
+                  <span class="font-bold hover:underline">SalmanKhan</span>
+                  <span class="material-symbols-rounded text-blue-500 text-sm"
+                    >verified</span
+                  >
+                  <span class="text-gray-500 text-sm">@Skhan</span>
+                  <span class="text-gray-500 text-sm">·</span>
+                  <span class="text-gray-500 text-sm">2h</span>
+                  <div class="ml-auto">
+                    <button class="hover:bg-gray-800 p-1 rounded-full">
+                      <span class="material-symbols-rounded text-gray-500"
+                        >more_horiz</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <p class="break-words">
+                    #radhakrishna #krishna #harekrishna #bhakti #radha #hindu
+                    #iskcon #vrindavan #bhagavadgita
+                  </p>
+                </div>
+                <div
+                  class="mb-3 rounded-2xl overflow-hidden border border-gray-700"
+                >
+                  <div class="bg-post-1 bg-cover bg-center h-80 w-full"></div>
+                </div>
+                <div class="flex justify-between max-w-md">
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >chat_bubble_outline</span
+                      >
+                    </div>
+                    <span class="text-sm">100</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-green-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-green-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >repeat</span
+                      >
+                    </div>
+                    <span class="text-sm">50</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-red-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-red-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >favorite</span
+                      >
+                    </div>
+                    <span class="text-sm">2000</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >equalizer</span
+                      >
+                    </div>
+                    <span class="text-sm">3.2M</span>
+                  </button>
+                  <div class="flex space-x-1">
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >bookmark</span
+                        >
+                      </div>
+                    </button>
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >share</span
+                        >
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+ <!-- Post 2-->
+          <article
+            class="p-4 hover:bg-gray-950 transition-colors cursor-pointer"
+          >
+            <div class="flex space-x-3">
+              <img
+                src="https://pbs.twimg.com/profile_images/1626841805538070534/vM_I5Xha_bigger.png"
+                alt="SalmanKhan"
+                class="w-12 h-12 rounded-full flex-shrink-0"
+              />
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center space-x-2 mb-1">
+                  <span class="font-bold hover:underline">SalmanKhan</span>
+                  <span class="material-symbols-rounded text-blue-500 text-sm"
+                    >verified</span
+                  >
+                  <span class="text-gray-500 text-sm">@Skhan</span>
+                  <span class="text-gray-500 text-sm">·</span>
+                  <span class="text-gray-500 text-sm">2h</span>
+                  <div class="ml-auto">
+                    <button class="hover:bg-gray-800 p-1 rounded-full">
+                      <span class="material-symbols-rounded text-gray-500"
+                        >more_horiz</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <p class="break-words">
+                    #radhakrishna #krishna #harekrishna #bhakti #radha #hindu
+                    #iskcon #vrindavan #bhagavadgita
+                  </p>
+                </div>
+                <div
+                  class="mb-3 rounded-2xl overflow-hidden border border-gray-700"
+                >
+                  <div class="bg-post-1 bg-cover bg-center h-80 w-full"></div>
+                </div>
+                <div class="flex justify-between max-w-md">
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >chat_bubble_outline</span
+                      >
+                    </div>
+                    <span class="text-sm">100</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-green-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-green-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >repeat</span
+                      >
+                    </div>
+                    <span class="text-sm">50</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-red-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-red-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >favorite</span
+                      >
+                    </div>
+                    <span class="text-sm">2000</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >equalizer</span
+                      >
+                    </div>
+                    <span class="text-sm">3.2M</span>
+                  </button>
+                  <div class="flex space-x-1">
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >bookmark</span
+                        >
+                      </div>
+                    </button>
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >share</span
+                        >
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article
+            class="p-4 hover:bg-gray-950 transition-colors cursor-pointer"
+          >
+            <div class="flex space-x-3">
+              <img
+                src="https://pbs.twimg.com/profile_images/1626841805538070534/vM_I5Xha_bigger.png"
+                alt="SalmanKhan"
+                class="w-12 h-12 rounded-full flex-shrink-0"
+              />
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center space-x-2 mb-1">
+                  <span class="font-bold hover:underline">SalmanKhan</span>
+                  <span class="material-symbols-rounded text-blue-500 text-sm"
+                    >verified</span
+                  >
+                  <span class="text-gray-500 text-sm">@Skhan</span>
+                  <span class="text-gray-500 text-sm">·</span>
+                  <span class="text-gray-500 text-sm">3h</span>
+                  <div class="ml-auto">
+                    <button class="hover:bg-gray-800 p-1 rounded-full">
+                      <span class="material-symbols-rounded text-gray-500"
+                        >more_horiz</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <p class="break-words">Best Environment 🌿</p>
+                </div>
+                <div
+                  class="mb-3 rounded-2xl overflow-hidden border border-gray-700"
+                >
+                  <div class="bg-post-3 bg-cover bg-center h-80 w-full"></div>
+                </div>
+                <div class="flex justify-between max-w-md">
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >chat_bubble_outline</span
+                      >
+                    </div>
+                    <span class="text-sm">45</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-green-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-green-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >repeat</span
+                      >
+                    </div>
+                    <span class="text-sm">23</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-red-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-red-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >favorite</span
+                      >
+                    </div>
+                    <span class="text-sm">1.2K</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >equalizer</span
+                      >
+                    </div>
+                    <span class="text-sm">15K</span>
+                  </button>
+                  <div class="flex space-x-1">
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >bookmark</span
+                        >
+                      </div>
+                    </button>
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >share</span
+                        >
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+         <!-- Post 4 -->
+          <article
+            class="p-4 hover:bg-gray-950 transition-colors cursor-pointer"
+          >
+            <div class="flex space-x-3">
+              <img
+                src="https://pbs.twimg.com/profile_images/1626841805538070534/vM_I5Xha_bigger.png"
+                alt="SalmanKhan"
+                class="w-12 h-12 rounded-full flex-shrink-0"
+              />
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center space-x-2 mb-1">
+                  <span class="font-bold hover:underline">SalmanKhan</span>
+                  <span class="material-symbols-rounded text-blue-500 text-sm"
+                    >verified</span
+                  >
+                  <span class="text-gray-500 text-sm">@Skhan</span>
+                  <span class="text-gray-500 text-sm">·</span>
+                  <span class="text-gray-500 text-sm">2h</span>
+                  <div class="ml-auto">
+                    <button class="hover:bg-gray-800 p-1 rounded-full">
+                      <span class="material-symbols-rounded text-gray-500"
+                        >more_horiz</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <p class="break-words">
+                    #radhakrishna #krishna #harekrishna #bhakti #radha #hindu
+                    #iskcon #vrindavan #bhagavadgita
+                  </p>
+                </div>
+                <div
+                  class="mb-3 rounded-2xl overflow-hidden border border-gray-700"
+                >
+                  <div class="bg-post-4 bg-cover bg-center h-80 w-full"></div>
+                </div>
+                <div class="flex justify-between max-w-md">
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >chat_bubble_outline</span
+                      >
+                    </div>
+                    <span class="text-sm">100</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-green-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-green-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >repeat</span
+                      >
+                    </div>
+                    <span class="text-sm">50</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-red-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-red-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >favorite</span
+                      >
+                    </div>
+                    <span class="text-sm">2000</span>
+                  </button>
+                  <button
+                    class="flex items-center space-x-2 hover:text-blue-500 group"
+                  >
+                    <div
+                      class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                    >
+                      <span class="material-symbols-rounded text-lg"
+                        >equalizer</span
+                      >
+                    </div>
+                    <span class="text-sm">3.2M</span>
+                  </button>
+                  <div class="flex space-x-1">
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >bookmark</span
+                        >
+                      </div>
+                    </button>
+                    <button class="hover:text-blue-500 group">
+                      <div
+                        class="p-2 rounded-full group-hover:bg-blue-500 group-hover:bg-opacity-10 transition-colors"
+                      >
+                        <span class="material-symbols-rounded text-lg"
+                          >share</span
+                        >
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+      </div>
+
+      <!-- Right Sidebar -->
+<!-- Right Sidebar -->
+<aside class="hidden lg:flex flex-col w-80 h-screen sticky top-0 p-4 space-y-4 border-l border-gray-800">
+
+  <!-- Search Bar (Always Top Sticky) -->
+  <div class="sticky top-0 bg-black pb-3 z-20">
+    <div class="relative">
+      <span class="material-symbols-rounded absolute left-3 top-3 text-gray-500">search</span>
+      <input
+        type="text"
+        placeholder="Search"
+        class="w-full bg-gray-900 border border-gray-700 rounded-full py-2 pl-12 pr-1 focus:outline-none focus:border-blue-500 transition-colors"
+      />
+    </div>
+  </div>
+
+  <!-- Scrollable Section -->
+  <div class="flex-1 overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-black">
+
+    <!-- Premium Subscribe -->
+    <div class="bg-black text-white rounded-xl p-4 border border-gray-600">
+      <h2 class="text-xl font-bold mb-2">Subscribe to Premium</h2>
+      <p class="text-gray-400 text-sm mb-4">
+        Subscribe to unlock new features and if eligible, receive a share of revenue.
+      </p>
+      <button
+        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition-colors"
+      >
+        Subscribe
+      </button>
+    </div>
+
+    <!-- What’s happening -->
+    <div class="bg-black text-white rounded-xl border border-gray-600">
+      <h2 class="text-xl font-bold p-4 border-b border-gray-800  bg-black z-10">
+        What’s happening
+      </h2>
+
+      <div class="px-4 py-2 border-b border-gray-800">
+        <p class="text-gray-400 text-sm">Business & finance · Trending</p>
+        <p class="font-bold hover:underline cursor-pointer">#Nifty50</p>
+        <p class="text-gray-400 text-sm">1,561 posts</p>
+      </div>
+
+      <div class="px-4 py-2 border-b border-gray-800">
+        <p class="text-gray-400 text-sm">Politics · Trending</p>
+        <p class="font-bold hover:underline cursor-pointer">Corruption</p>
+        <p class="text-gray-400 text-sm">123K posts</p>
+      </div>
+
+      <div class="px-4 py-2 border-b border-gray-800">
+        <p class="text-gray-400 text-sm">Trending</p>
+        <p class="font-bold hover:underline cursor-pointer">#BoxOffice</p>
+        <p class="text-gray-400 text-sm">1,253 posts</p>
+      </div>
+
+      <div class="px-4 py-2 border-b border-gray-800">
+        <p class="text-gray-400 text-sm">Entertainment · Trending</p>
+        <p class="font-bold hover:underline cursor-pointer">#BattleOfGalwan</p>
+        <p class="text-gray-400 text-sm">3,460 posts</p>
+      </div>
+
+      <!-- Show More -->
+      <div class="px-4 py-3">
+        <button class="text-sky-500 hover:text-sky-400 text-sm font-medium">
+          Show more
+        </button>
+      </div>
+    </div>
+
+    <!-- Who to follow -->
+    <div class="bg-black text-white rounded-xl border border-gray-600">
+      <h2 class="text-xl font-bold p-4 border-b border-gray-800 sticky top-0 bg-black z-10">
+        Who to follow
+      </h2>
+
+      <!-- User Suggestion -->
+      <div class="flex items-center justify-between px-4 py-3 border-b border-gray-800">
+        <div class="flex items-center space-x-3">
+          <img src="https://via.placeholder.com/40" alt="User"
+            class="w-10 h-10 rounded-full" />
+          <div>
+            <p class="font-bold hover:underline cursor-pointer">John Doe</p>
+            <p class="text-gray-400 text-sm">@johndoe</p>
+          </div>
+        </div>
+        <button class="bg-white text-black font-bold px-4 py-1 rounded-full hover:bg-gray-200">
+          Follow
+        </button>
+      </div>
+
+      <div class="flex items-center justify-between px-4 py-3 border-b border-gray-800">
+        <div class="flex items-center space-x-3">
+          <img src="https://via.placeholder.com/40" alt="User"
+            class="w-10 h-10 rounded-full" />
+          <div>
+            <p class="font-bold hover:underline cursor-pointer">Jane Smith</p>
+            <p class="text-gray-400 text-sm">@janesmith</p>
+          </div>
+        </div>
+        <button class="bg-white text-black font-bold px-4 py-1 rounded-full hover:bg-gray-200">
+          Follow
+        </button>
+      </div>
+
+      <div class="flex items-center justify-between px-4 py-3 border-b border-gray-800">
+        <div class="flex items-center space-x-3">
+          <img src="https://via.placeholder.com/40" alt="User"
+            class="w-10 h-10 rounded-full" />
+          <div>
+            <p class="font-bold hover:underline cursor-pointer">Tech Guru</p>
+            <p class="text-gray-400 text-sm">@techguru</p>
+          </div>
+        </div>
+        <button class="bg-white text-black font-bold px-4 py-1 rounded-full hover:bg-gray-200">
+          Follow
+        </button>
+      </div>
+
+      <!-- Show More -->
+      <div class="px-4 py-3">
+        <button class="text-sky-500 hover:text-sky-400 text-sm font-medium">
+          Show more
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Links (Always Bottom) -->
+  <div class="text-xs text-gray-500 space-y-2">
+    <div class="flex flex-wrap gap-3">
+      <a href="#" class="hover:underline">Terms of Service</a>
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Cookie Policy</a>
+      <a href="#" class="hover:underline">Accessibility</a>
+      <a href="#" class="hover:underline">Ads info</a>
+      <a href="#" class="hover:underline flex items-center">
+        More
+        <span class="material-symbols-rounded text-xs ml-1">more_horiz</span>
+      </a>
+    </div>
+    <p class="flex items-center">
+      <span class="material-symbols-rounded text-xs mr-1">copyright</span>
+      2025 MD Corp.
+    </p>
+  </div>
+</aside>
+
+
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800 z-50"
+    >
+      <div class="flex justify-around py-2">
+        <button class="flex flex-col items-center p-2">
+          <span class="material-symbols-rounded text-2xl">home</span>
+        </button>
+        <button class="flex flex-col items-center p-2">
+          <span class="material-symbols-rounded text-2xl">search</span>
+        </button>
+        <button class="flex flex-col items-center p-2">
+          <span class="material-symbols-rounded text-2xl">notifications</span>
+        </button>
+        <button class="flex flex-col items-center p-2">
+          <span class="material-symbols-rounded text-2xl">mail</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile spacing for bottom nav -->
+    <div class="md:hidden h-16"></div>
+  </body>
+</html>

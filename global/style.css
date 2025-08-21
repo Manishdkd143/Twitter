@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @layer base{
+  .sidebar-icon{
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  .small-icon{
+    font-family: 'Material Symbols Rounded';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  .material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+  }
+.font-color{
+  color: rgba(231,233,234,1);
+}
+.li-style{
+    @apply flex justify-start gap-5   p-2  pr-6 h-12 items-center m-0 text-xl font-medium  font-sans   hover:bg-zinc-800 transition-all rounded-3xl  cursor-pointer ;
+}
+.fontFamily{
+    font-family: 'TwitterChirp', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+  .text-color{
+    color: rgba(113,118,123,1);
+  }
+  .toolbaricon-color{
+    color:rgb(29,155,240)
+  }
+  .toolbaricon-fontsize{
+    font-size: 20px;
+  }
+  .postimg-style{
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.00);
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: flex
+;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    list-style: none;
+    margin: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    padding: 0px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+  }
+  .hover-trigger:hover + .hover-target{
+    opacity: 100;
+  }
+  .icon-hover{
+    color: #71767B;
+    transition: color 0.3s background 0.3s;
+  }
+  .icon-hover:hover{
+    color: #1f6feb;
+    border: 1px ;
+    border-radius: 1rem;
+  background: rgba(29,155,240,0.2);
+  }
+  .border-color{
+    border-color: rgb(47,51,54);
+  }
+  .headerbtn:focus + .borderline{
+    color: #ffffff;
+   opacity: 100;
+   transition: all ease-in-out 0.2s;
+  }
+  .input-box:focus + .icon{
+    outline: none;
+   display: none;
+   padding-left: 0;
+ }
+  
+  /* Custom scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2f3336;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color:rgb(22,24,28);
+    border-radius: 10px;
+    border: 3px solid #2f3336;
+  }
+  
+/* } */ */
+
+
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .border-color { border-color: rgb(47, 51, 54); }
+        .text-color { color: rgb(113, 118, 123); }
+        .toolbaricon-color { color: rgb(29, 155, 240); }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 2px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgb(47, 51, 54); border-radius: 10px; }
+        
+        /* Hover effects for tooltips */
+        .hover-tooltip:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        .tooltip {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        /* Background images */
+        .bg-post-1 { background-image: url('/svg/lord_krishna.png'); }
+        .bg-post-2 { background-image: url('/svg/radha_krishna.webp'); }
+        .bg-post-3 { background-image: url('/svg/prem_mandir.jpg');}
+        .bg-post-4 { background-image: url('/svg/lord_krishna.png');}
+
+    
